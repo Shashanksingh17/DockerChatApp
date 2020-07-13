@@ -18,7 +18,7 @@ pipeline {
 				cd ChatAppPipeline/
 				docker stop $(docker ps -a -q)
 				docker rm $(docker ps -a -q)
-				docker rmi -f chatapp_chat:latest shashanksingh17/chat
+				docker rmi -f chatapp_chat:latest
 				docker-compose up -d
 				'
 				'''
